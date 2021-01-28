@@ -3,8 +3,7 @@
 
   <h3>
       <a [title]="product.name + ' details'">
-      {{ product.name }}
-    </a>
+      {{ product.name }}    </a>
   </h3>
 
   <p *ngIf="product.description">
@@ -16,7 +15,7 @@
   </button>
 
   <app-product-alerts
-  [product]="product">
+  [product]="product" (notify)="onNotify()">
 </app-product-alerts>
 
 </div>
